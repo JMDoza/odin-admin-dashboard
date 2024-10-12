@@ -1,19 +1,23 @@
 body {
   margin: 0;
+  font-family: roboto;
+  font-weight: 700;
 }
+
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
 }
 
 .side-bar {
-  background-color: blue;
+  background-color: #0ea5e9;
   grid-row: 1 / 3;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(2, 1fr) 10fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(10, 0fr);
+  row-gap: 16px;
 }
 
 .side-bar-brands {
@@ -22,6 +26,28 @@ body {
 
 .side-bar * {
   color: white;
+  fill: white;
+  font-size: 18px;
+}
+
+.dash-svg {
+  width: 36px;
+  place-self: center;
+}
+
+.side-bar-header {
+  font-size: 24px;
+  margin: 18px 0px;
+  align-self: center;
+}
+
+.nav-svg {
+  width: 18px;
+  justify-self: center;
+}
+
+.communities {
+  margin-bottom: 44px;
 }
 
 .header {
@@ -40,7 +66,7 @@ body {
 }
 
 .search-bar {
-  background-color: gray;
+  background-color: #e0f2fe;
   flex: 1;
   height: 24px;
   border-radius: 12px;
@@ -64,23 +90,41 @@ body {
 
 .main-content {
   display: grid;
-  margin: 10px 10px;
+  padding: 10px 10px;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  background-color: antiquewhite;
+  gap: 16px;
+  background-color: #e0f2fe;
 }
 
 .projects {
-  background-color: aqua;
   grid-row: 1 / 3;
+}
+
+.announcements {
+  /* background-color: brown; */
+}
+
+.trending {
+  /* background-color: blueviolet; */
 }
 
 .projects-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.projects-content-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.projects-content-buttons div svg {
+  width: 18px;
 }
 
 .project-item {
-  border: 2px solid red;
+  background-color: white;
 }
