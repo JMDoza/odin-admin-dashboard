@@ -49,12 +49,13 @@ body {
 .communities {
   margin-bottom: 44px;
 }
-
+/* /////////////////////// */
 .header {
   background-color: white;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-template-rows: 1fr 1fr;
+  align-items: center;
 }
 
 .search-bar-container,
@@ -65,11 +66,38 @@ body {
   /* justify-content: space-around; */
 }
 
+.search-bar-icon, .alert-icon {
+  width: 20px;
+}
+
 .search-bar {
   background-color: #e0f2fe;
   flex: 1;
   height: 24px;
   border-radius: 12px;
+}
+
+.user-alert-buttons .user-icon {
+  width: 36px;
+}
+
+.user-info .user-icon {
+  width: 56px;
+}
+
+.header-buttons {
+  justify-content: space-around;
+}
+
+.header-buttons div {
+  display: grid;
+  place-items: center;
+  background-color: #0ea5e9;
+  color: white;
+  font-size: 12px;
+  border-radius: 24px;
+  width: 72px;
+  height: 30px;
 }
 
 /* .search-bar-container{
