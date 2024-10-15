@@ -4,7 +4,8 @@ body {
   font-weight: 700;
 }
 
-h4, p {
+h4,
+p {
   margin: 0;
 }
 
@@ -139,7 +140,9 @@ h4, p {
   background-color: #e0f2fe;
 }
 
-.projects-header {
+.projects-header,
+.announcements-header,
+.trending-header {
   font-size: 17px;
   margin-bottom: 10px;
 }
@@ -174,17 +177,9 @@ h4, p {
 }
 
 .project-item p {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   color: rgb(116, 116, 116);
-}
-
-.announcements {
-  /* background-color: brown; */
-}
-
-.trending {
-  /* background-color: blueviolet; */
 }
 
 .projects-content {
@@ -205,4 +200,35 @@ h4, p {
   height: 20px;
 }
 
+.announcements-items {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 24px;
+}
 
+.announcements-content {
+  margin: 2px 4px;
+}
+
+.line-break {
+  display: block;
+  width: auto;
+  height: 1px;
+  margin: 10px 0;
+  background-color: rgb(116, 116, 116);
+}
+
+.announcements-content > h4 {
+  font-size: 12px;
+}
+
+.announcements-content > p {
+  font-size: 10px;
+  font-weight: 500;
+  color: rgb(116, 116, 116);
+}
+
+.trending {
+  /* background-color: blueviolet; */
+}
