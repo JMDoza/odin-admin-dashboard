@@ -135,7 +135,7 @@ p {
   display: grid;
   padding: 30px 16px;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0fr auto;
   gap: 16px;
   background-color: #e0f2fe;
 }
@@ -229,6 +229,30 @@ p {
   color: rgb(116, 116, 116);
 }
 
-.trending {
-  /* background-color: blueviolet; */
+/* /////////////////////////// */
+
+/* .trending {
+  grid-row: 2 / 3;
+} */
+
+.trending-items {
+  display: grid;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 12px;
+  gap: 10px
+}
+
+.trending-items .user-icon {
+  height: 50px;
+}
+
+.user-trending div {
+  font-size: 12px;
+}
+
+.user-trending div:last-child {
+  margin-top: 2px;
+  color: rgb(116, 116, 116);
 }
